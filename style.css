@@ -1,0 +1,252 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: x-large;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+p {
+  color: hsl(201, 15%, 24%, 0.6);
+}
+/**
+ Dashboard 
+*/
+.dashboard {
+  background: hsl(201, 79%, 46%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.dashboard-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px 0px 100px 0px;
+}
+.dashboard-iconName {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dashboard-iconName * {
+  padding: 0px 15px;
+}
+
+/**
+ Content 
+*/
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/**
+ Header
+*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.header-top {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px 15px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+}
+.searchbar {
+  width: 500px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  background: hsl(201, 32%, 91%);
+  border-radius: 9999px;
+  height: 35px;
+}
+.header-topRight {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icon-bell {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 15px;
+}
+.header-bottomLeft {
+  display: flex;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.welcome * {
+  margin: 0px;
+}
+.image-wolfLarge {
+  width: 100px;
+  height: 67px;
+  clip-path: circle();
+  align-self: center;
+}
+.image-wolfSmall {
+  width: 60px;
+  height: 40px;
+  clip-path: circle();
+}
+.header-bottomRight {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+button {
+  width: 125px;
+  height: 50px;
+  border-radius: 9999px;
+  background-color: hsl(201, 79%, 46%);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+/* Body */
+.body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: hsl(201, 32%, 91%);
+  gap: 25px;
+  padding: 15px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(201, 32%, 91%);
+}
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: hsl(201, 32%, 91%);
+  gap: 25px;
+}
+.project-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 17px 23px;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 5px solid #efb01d;
+}
+
+.project-card-icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.project-card-icons * {
+  padding: 0px 17px;
+  width: 50px;
+  height: 25px;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Announcements */
+.announcements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.announcement-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 17px 23px;
+  border-radius: 5px;
+}
+.announcement-card * {
+  margin: 0px;
+  padding: 0px;
+}
+.announcement-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid hsl(201, 15%, 24%, 0.6);
+  margin: 10px 0px 5px 0px;
+  padding-bottom: 10px;
+}
+
+/* Trending */
+.trending {
+  display: flex;
+  flex-direction: column;
+}
+.trending-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 17px 23px;
+  border-radius: 5px;
+}
+.handle * {
+  margin: 0px;
+  padding: 0px;
+}
+.trending-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px 5px 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsl(201, 15%, 24%, 0.6);
+}
